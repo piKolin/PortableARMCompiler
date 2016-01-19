@@ -1,4 +1,2 @@
-set PATH=X:\MinGW\bin;X:\MinGW\msys\1.0\bin;X:\devkitPro\devkitARM\bin;X:\Python27;X:\Python27\Scripts;X:\Python34;X:\Python34\Scripts;X:\git\bin;
+set PATH=%~dp0MinGW\bin;%~dp0MinGW\msys\1.0\bin;%~dp0devkitPro\devkitARM\bin;%~dp0Python27;%~dp0Python27\Scripts;%~dp0Python34;%~dp0Python34\Scripts;%~dp0git\bin;
 %PATH%
-set DEVKITPRO=/X/devkitPro/
-SET DEVKITARM=/x/devkitPro/devkitARM/
