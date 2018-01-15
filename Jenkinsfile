@@ -8,8 +8,17 @@ pipeline {
       }
     }
     stage('Stage02') {
-      steps {
-        emailext(presendScript: 'asdsadasdad', subject: 'assad', body: 'asdaasd')
+      parallel {
+        stage('Stage02') {
+          steps {
+            emailext(presendScript: 'asdsadasdad', subject: 'assad', body: 'asdaasd')
+          }
+        }
+        stage('Stage02.1') {
+          steps {
+            readFile 'asdasd.txt'
+          }
+        }
       }
     }
   }
